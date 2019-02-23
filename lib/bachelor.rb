@@ -37,7 +37,7 @@ def get_occupation(data, hometown)
     data.each do|seaon, value_arr|
       value_arr.each do|ppl|
          if ppl["hometown"] == hometown 
-            ppl["occupation"]
+           return ppl["occupation"]
          end
       end
     end  
